@@ -1,0 +1,456 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+.container {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+/* Start nav */
+nav {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    height: 43px;
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+
+}
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    padding: 10px 15px;
+    transition: 1s;
+}
+nav ul .active a {
+    background-color: #f44336;
+    color: white;
+    width: 100%;
+}
+nav ul li a:hover ,.active >a {
+   background-color: #eee;
+   color: #000;
+
+}
+nav ul  .book {
+    float: right;
+    background-color: #eee;
+}
+nav  #hoverButton {
+    float: right;
+    background-color: red;
+    /* display: none; */
+}
+.clear {
+    clear: both;
+}
+/* End nav */
+
+/* media quary nav */
+@media screen and (max-width:768px) {
+    nav ul li:not(:first-child) {
+        display: block;
+        text-align: center;
+        background-color: #f44336;
+        color: #ccc;
+        display: none;
+    }
+ 
+    nav ul li a{
+        color: white;
+    }
+    nav ul li:hover:not(:first-child){
+      background-color: black;
+      display: block;
+    }
+
+    nav ul li.book {
+        float: none;
+    }
+ 
+    
+}
+/* media quary nav */
+
+/* Star header */
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../imges/hotel.jpg);
+    background-size: cover;
+    position: relative;
+}
+header form  {
+    position: absolute;
+    top: 220px;
+    left: 20px;
+    /* border: 1px solid #fff; */
+    width: 47%;
+    background-color: #fff;
+
+
+}
+header form h2 {
+    background-color: #f44336;
+    color: white;
+    font-size: 35px;
+    padding: 10px 20px;
+    margin-top: 0;
+}
+header form label {
+    text-transform: capitalize;
+    margin: 10px 0;
+    margin-left: 10px;
+}
+header form input {
+    width: 40%;
+    padding: 8px;
+    margin-left: 10px;
+    
+}
+header form button {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    outline: 0;
+    border: none;
+    width: 200px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+header form button:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* End header */
+
+/* media quary form header   */
+@media screen and (max-width:768px){
+    header form  {
+        position: absolute;
+        top: 90px;
+        left: 20px;
+        width: 50%; 
+        
+    }
+    header form h2 {
+        font-size: 15px;
+    }
+    header form input {
+        width: 50%;
+        padding: 8px;
+        margin-left: 10px; 
+    }
+  
+}
+/* media quary form header   */
+
+/* Start Rooms */
+section {
+   padding: 30px 0;
+   margin: 20px 0; 
+}
+.Rooms {
+    width: 95%;
+    margin: auto;
+   
+}
+.Rooms .cheek-in,.cheek-out {
+    width: 47%;
+    margin: 10px 0;
+}
+.Rooms .cheek-in {
+    float: left;
+    margin-right:  1%;
+}
+.Rooms .cheek-out {
+    float: left;
+    margin-left:  1%;
+}
+
+.Rooms input {
+   
+    padding: 10px 1px;
+    width: 100%;
+}
+.Room-imges {
+    width: calc(94% /3);
+    margin:1%;
+    float: left;
+    background-color: white;
+}
+/* media quary cheek-in,cheek-out */
+@media screen and (max-width:768px) {
+    .Rooms .cheek-in,.cheek-out {
+        width: 100%;
+    }
+    .Rooms .cheek-in input,.cheek-out input {
+        width: 95%;
+    }
+    
+}
+/* media quary cheek-in,cheek-out */
+
+.Room-imges img {
+   width: 100%;
+}
+.Room-imges span {
+    display: block;
+    margin-top: 10px;
+}
+.Room-imges span ,h4 ,h3 ,h6{
+    padding:5px 10px;
+}
+.Room-imges h4 {
+    color: #f44336;
+}
+.Room-imges button {
+    width: 95%;
+    color: white;
+    background-color: black;
+    padding:  10px;
+    cursor: pointer;
+    transition: 1s;
+    outline: 0;
+    border: none;
+    margin: 10px  5px;
+}
+.Room-imges button:hover {
+    background-color: #ccc;
+    color:black;
+}
+/* End Rooms */
+
+/* media quary rooms */
+@media screen and (max-width: 768px){
+  
+    .Room-imges {
+      
+        width: 46%;
+        text-align: center;
+        border: 1px solid red;
+        margin: 10px 4px ;
+       
+    }
+    
+}
+
+@media screen and (max-width : 400px){
+    .Room-imges {
+        width: 100%;
+        text-align: center;
+        border: 1px solid red;
+        margin: 10px auto;
+    }
+    
+}
+/* media quary rooms */
+
+
+
+
+/* Start About */
+
+.About  {
+    float: left;
+    width: 35%;
+    margin-top: 10px;
+    
+}
+.map  {
+    width: 60%;
+    float: right;
+}
+
+.map img {
+
+        width: 100%;
+        opacity: 0.8;
+    
+}
+.phone span {
+    margin-top: 10px;
+    padding: 14px 100px;
+    display: inline-block;
+    font-size: 20px;
+}
+/* End About */
+
+/* media quary Aboot test */
+@media screen and (max-width:768px) {
+    .About,.map {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .phone span {
+  
+    display: block;
+    text-align: center;
+   
+    }
+    
+}
+/* media quary Aboot test */
+
+/*Start Danger */
+.Danger h2 {
+    margin-left: 10px;
+    padding: 40px;
+   font-size: 20px;
+   background-color: #f44336;
+   color: white;
+
+}
+/*End Danger */
+
+/* Start Our Hotels*/
+.Our-Hotels .imge-left {
+    width: 50%;
+    /* border: 1px solid blue; */
+    float: left;
+
+}
+.imge-left {
+    position: relative;/*pareint of span*/
+}
+.imge-left span {
+    position: absolute;
+    left: 23px;
+    top: 453px;
+    color: white;
+}
+
+
+.Our-Hotels .imge-left img {
+    width: 100%;
+}
+.Our-Hotels .imge-right {
+    width: 49%;
+    float: right;
+    /* border: 1px solid red; */
+
+}
+.Our-Hotels .imge-right .box-imge {
+    width: calc(96% / 2);
+    margin: 1%;
+    float: left;
+}
+.imge-right .box-imge img {
+    width: 100%;
+}
+/* .imge-right {
+    position: relative;
+} */
+.box-imge {
+    position: relative;/*pareint of span*/
+
+}
+.box-imge span {
+    position: absolute;
+    left: 17px;
+    top: 189px;
+    color: white;
+}
+/* End Our Hotels*/
+
+/*Start subscribed */
+.subscribed {
+    background-color:grey;
+    color: white;
+    margin: 10px 0;
+}
+.subscribed:hover {
+    background-color:black;
+}
+.subscribed h2{
+    padding-top:  71px ;
+}
+.subscribed label {
+    display: block;
+    padding: 10px 0;
+    margin-bottom: -7px;
+}
+.subscribed input {
+    width: 100%;
+    padding: 10px;
+}
+.subscribed button {
+    outline: 0;
+    border: none;
+    color: white;
+    background-color: #f44336;
+    padding: 10px;
+    margin: 10px 0;
+}
+/*End subscribed */
+
+/* Start Contact */
+.Contact  form input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+}
+.Contact  form button {
+    width: 150px;
+    outline: 0;
+    border: none;
+    padding: 15px 10px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+.Contact  form button:hover {
+    background-color: #ccc;
+    color: black;
+}
+/* End Contact */
+
+/* Start footer */
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 20px;
+}
+footer h2 {
+    padding-top: 30px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    padding: 10px;
+    display: inline-block;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+footer ul li a:hover {
+    color: #f44336;
+}
+footer h3 {
+    padding-bottom: 20px;
+}
+/* End footer */
